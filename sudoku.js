@@ -186,7 +186,7 @@ async function solve1 () {
             board[empty[0]][empty[1]] = i;
             finalInd = (empty[0]*9) + empty[1];
 
-            funcId("board").children[finalInd].classList.remove("solveColour")
+            
             await sleep1();
             funcId("board").children[finalInd].classList.add("solveColour");
             funcId("board").children[finalInd].innerHTML = i;                   //Changes the number on the board
