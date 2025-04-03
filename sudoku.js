@@ -96,7 +96,7 @@ function makeBoard () {
             
             var finalIndexes = [index1, index2];   // The above code is done to obtain the correct index and position of the square on the board which has a number placed in it
 
-            if(funcId("board").children[i].innerHTML != '' && numToAdd == 'del' && delChecker == 0) {
+            if(funcId("board").children[i].innerHTML != '' && numToAdd == 'del') {
 
                 funcId("board").children[i].innerHTML = ''; 
                 funcId("board").children[i].classList.remove("solveColour");       // This entire 'if' is created to delete an element from the board. The deleteChecker is set to 1 after this so that in the next if, "delete" will not be placed in the board.
